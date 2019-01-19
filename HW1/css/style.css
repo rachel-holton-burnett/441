@@ -1,0 +1,99 @@
+/* Page-Wide */
+
+body {
+
+    background-image: url("../images/hero1.JPG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: 5;
+}
+
+.description-container {
+    min-height: 25vh;
+    font-size: 1em;
+    background-color: rgba(151, 155, 158,.75)
+}
+
+.description {
+    margin: 8vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    min-width: 1px;
+
+
+}
+
+/* Hero Image Rules */
+.hero {
+    /* the 'vh' unit asks the browser to */
+    /* return the height of the viewport */
+    /* we can then use that to set the height of an element */
+    /* as a percentage of the viewport height (vh) */
+    height: 100vh;
+    min-height: 740px;
+    background-image: url("./images/hero1.JPG");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 25px 10px rgb(193, 226, 255);
+}
+
+.hero .title {
+    font-size: 30pt;
+    color: rgb(216, 237, 255);
+    float: center;
+    margin-top: 170px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(242, 46, 7, .25);
+}
+
+
+.title h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3 em;
+    letter-spacing: 0em;
+}
+
+.title h2 {
+  font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.5em;
+}
+
+.hero .nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(216, 237, 255);
+    margin-top: 2em;
+    font-size: -1.5em;
+    display: flex;
+    flex-direction:column;
+}
+
+.hero .nav a {
+    flex-grow: 1;
+    color: rgb(216, 237, 255);
+    text-decoration: none;
+}
+
+.hero .nav-item {
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    margin: .5em .5em;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-width: 1px 0;
+}
+
+.hero .nav-item:hover {
+    color: #fff;
+    background-color: rgba(207, 200, 222, 0.5);
+}
