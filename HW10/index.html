@@ -17,10 +17,17 @@
         <script>
             var canvas = document.getElementById("myCanvas");
             var ctx = canvas.getContext("2d");
-            var x = 50;
-            var y = 50;
+            var x=1;
+            var y=1;
+            var x1 = 50;
+            var y1 = 50;
+            var x2= 50;
+            var y2= 50;
+            var square2;
+
             ctx.fillStyle = "#0000FF";
-            drawSquare();
+            drawSquare1();
+            drawSquare2();
 
             setInterval(update, 1000);
 
@@ -29,17 +36,65 @@
             {
 
                 ctx.clearRect(0,0,800,600);
-                drawSquare();
+                drawSquare1();
+                drawSquare2();
+
+
             }
 
-            function drawSquare()
+
+         function drawSquare1()
             {
-                ctx.fillRect(x, y, 20, 20);
+             ctx.fillRect(x, y, 20, 20);
                 //x=100
-                x=x+10
-                y=y+10
+              x=x+10
+              y=y+10
+           ctx.fillStyle = "#0000FF";
 
             }
+
+
+
+        function drawSquare2()
+          {
+    ctx.fillRect(x2, y2, 20, 20);
+    ctx.fillStyle="red";
+
+
+             }
+   $(document).ready(function(){
+    $(this).keypress(function(event){
+        getKey(event);
+    });
+});
+
+             function getKey(event)
+             {
+                 var char = event.which || event.keyCode;
+                 var actualLetter = String.fromCharCode(char);
+                 if(actualLetter == "w")
+                 {
+                     moveUp();
+                 }
+                 drawSquare2();
+             }
+
+             function moveUp()
+             {
+                 y2=-100;
+             }
+
+
+             function hasCollided(square1, square2) {
+                 return !(
+                     ((square1.y + square1.height) < (square2.y)) ||
+                     (square1.y > (square2.y + square2.height)) ||
+                     ((square1.x + square1.width) < square2.x) ||
+                     (square1.x > (square2.x + square2.width))
+                 );
+             }
+
+
 
 
         </script>

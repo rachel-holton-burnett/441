@@ -1,5 +1,8 @@
 var imageTags = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10"];
-var correct= "images/correct.png";
+var correct= "images/correct1.png";
+var incorrect = "images/tryagain.png";
+ 
+var actualImages = new Array();
 
 function createImageArray()
 {
@@ -9,29 +12,35 @@ function createImageArray()
 
   }
 
-function question1 () {
 
-  var myQuestion = document.getElementById("question");
+  function start() {
 
-  myQuestion.innerHTML = "<p> This is the only animal that can't jump </p>";
+    var myQuestion = document.getElementById("question");
 
-  if(image.src.match("images/elephant.jpg"))  {
-      image.src = "images/correct1.png";
-   } else if (image.src.match ("frog")){
+    myQuestion.innerHTML = "<p> This is the only animal that can't jump </p>";
+
+  }
+
+function question1() {
+
+  //var myQuestion = document.getElementById("question");
+  var image = document.getElementById('elephantQuestion');
+
+  //myQuestion.innerHTML = "<p> This is the only animal that can't jump </p>";
+
+  if( question  == image.src.match ("elephant"))  {
       image.src = "images/tryagain.png";
+   } else {
+      image.src = "images/correct1.png";
     }
 
 
 }
-
-
-
-
 function changeImage2() {
   var image = document.getElementById("myImage2");
   if (image.src.match("frog")) {
     image.src = "images/correct1.png";
  } else {
-    text = "try again";
+    image.src = "images/tryagain.png";
   }
 }

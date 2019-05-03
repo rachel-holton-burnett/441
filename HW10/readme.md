@@ -1,3 +1,2 @@
-<h1> Rachel Holton-Burnett Week 6 Read Me </h1>
-<p> I had a lot of difficulties with the second part of this assignment. I know that it's not complete but I don't understand how to connect the final page to the main page. I tried
-several things but I could not get anything to work. I feel like I need to create an if statement that when the count is equal to ten it changes the page to print the name,age and final score but I couldn't get it ironed out. </p>
+<h1> Rachel Holton-Burnett Week 10 Read Me </h1>
+<p> I had more difficutlies with this project than any others. I tried so many things to change my x and y value but I could not figure out. My script is on my HTML file. I started doing that instead of using the JS file because I was having such a hard time with it that I just wanted all of the code in front of me. I know that this isn't even close to being finished but I'm not going to make any more progress on it so I wanted to turn it in.  </p>
