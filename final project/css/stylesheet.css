@@ -25,6 +25,13 @@ p {
   font-size: 40px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
 
 
 .divTable{
@@ -37,23 +44,23 @@ p {
 	display: table-row;
 }
 .divTableHeading {
-	background-color: #EEE;
+	background-color: #028090;
 	display: table-header-group;
 }
 .divTableCell, .divTableHead {
-	border: 5px solid #fff8e5;
+	border: 5px solid #05668d;
 	display: table-cell;
 	padding: 3px 10px;
   color: fff8e5;
   font-size: 25px;
 }
 .divTableHeading {
-	background-color: #EEE;
+	background-color: #028090;
 	display: table-header-group;
 	font-weight: bold;
 }
 .divTableFoot {
-	background-color: #EEE;
+	background-color: #028090;
 	display: table-footer-group;
 	font-weight: bold;
 }
